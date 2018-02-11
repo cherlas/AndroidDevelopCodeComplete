@@ -1,2 +1,2 @@
 # AndroidDevelopCodeComplete
-Android develop code complete...
+Android develop code complete demos.
