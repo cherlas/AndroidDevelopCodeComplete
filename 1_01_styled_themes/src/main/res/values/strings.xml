@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">styled_themes</string>
+    <string name="app_name">1_01_styled_themes</string>
+    <string name="label_theme">Custom Theme</string>
+    <string name="label_style">Styled Widgets</string>
+    <string name="select_one">Select One</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="select_all">Select All</string>
 </resources>
