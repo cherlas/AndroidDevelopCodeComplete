@@ -10,4 +10,6 @@
 
     <color name="controlNormalGreen">#81C784</color>
     <color name="controlActivatedGreen">#4CAF50</color>
+
+    <color name="text_checkbox">#999</color>
 </resources>
