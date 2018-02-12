@@ -6,3 +6,5 @@
 /build
 /captures
 .externalNativeBuild
+styled_themes/build/
+styled_themes/libs/
