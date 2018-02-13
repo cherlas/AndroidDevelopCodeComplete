@@ -7,9 +7,16 @@
     android:orientation="vertical"
     tools:context="cc.istarx.a1_02_switchsystemui.SwitchSystemUI">
     <ToggleButton
-        android:id="@+id/toggleMode"
+        android:id="@+id/toggle_system_ui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/toggle_mode"
+        android:text="@string/toggle_system_ui"
+        android:layout_gravity="center"/>
+
+    <ToggleButton
+        android:id="@+id/hide_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hide_navigation"
         android:layout_gravity="center"/>
 </LinearLayout>
