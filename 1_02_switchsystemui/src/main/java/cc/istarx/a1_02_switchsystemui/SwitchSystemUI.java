@@ -1,18 +1,21 @@
 package cc.istarx.a1_02_switchsystemui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 
-public class SwitchSystemUI extends AppCompatActivity implements View.OnClickListener{
+public class SwitchSystemUI extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
         setContentView(R.layout.activity_switch_system_ui);
 
         findViewById(R.id.toggle_system_ui).setOnClickListener(this);
         findViewById(R.id.hide_navigation).setOnClickListener(this);
+        findViewById(R.id.switch_fullscreen).setOnClickListener(this);
     }
 
     @Override
@@ -23,7 +26,19 @@ public class SwitchSystemUI extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.hide_navigation:
                 hideNavigation(v);
+                break;
+            case R.id.switch_fullscreen:
+                showFullscreen(v);
+                break;
+            default:
+                break;
         }
+    }
+
+    private void showFullscreen(View view) {
+        view.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN /*隐藏状态栏以及 Action Bar */
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION /* 隐藏导航栏*/
+                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE/* 不要移动布局*/);
     }
 
     private void hideNavigation(View view) {

@@ -19,4 +19,11 @@
         android:layout_height="wrap_content"
         android:text="@string/hide_navigation"
         android:layout_gravity="center"/>
+
+    <ToggleButton
+        android:id="@+id/switch_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_fullscreen"
+        android:layout_gravity="center"/>
 </LinearLayout>
