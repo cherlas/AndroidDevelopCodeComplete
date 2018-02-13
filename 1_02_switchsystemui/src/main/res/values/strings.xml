@@ -2,4 +2,5 @@
     <string name="app_name">1_02_SwitchSystemUI</string>
     <string name="toggle_system_ui">Toggle System UI</string>
     <string name="hide_navigation">Hide Navigation</string>
+    <string name="show_fullscreen">Show Fullscreen</string>
 </resources>
