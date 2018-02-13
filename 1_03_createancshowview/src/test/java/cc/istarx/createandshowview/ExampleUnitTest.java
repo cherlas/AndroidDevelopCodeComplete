@@ -1,4 +1,4 @@
-package cc.istarx.createancshowview;
+package cc.istarx.createandshowview;
 
 import org.junit.Test;
 

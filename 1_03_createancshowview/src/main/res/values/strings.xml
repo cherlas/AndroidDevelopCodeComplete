@@ -3,4 +3,5 @@
     <string name="input_something">input something here...</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="custom_view">Custom View</string>
 </resources>
