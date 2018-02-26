@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AnimatorView</string>
+    <string name="complex_animator">Complex Animator</string>
 </resources>

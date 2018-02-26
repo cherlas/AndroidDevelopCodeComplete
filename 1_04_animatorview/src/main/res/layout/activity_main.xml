@@ -14,8 +14,13 @@
         android:text="ToggleButton" />
 
     <View
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/the_view"
-        android:background="#AAA"/>
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="#AAA" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/complex_animator"
+        android:text="@string/complex_animator"/>
 </LinearLayout>
