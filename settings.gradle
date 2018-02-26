@@ -1,1 +1,1 @@
-include ':1_01_styled_themes', ':1_02_switchsystemui', ':1_03_createancshowview'
+include ':1_01_styled_themes', ':1_02_switchsystemui', ':1_03_createancshowview', ':1_04_animatorview'
