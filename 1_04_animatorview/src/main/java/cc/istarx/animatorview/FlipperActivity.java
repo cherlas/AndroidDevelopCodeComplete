@@ -1,5 +1,7 @@
 package cc.istarx.animatorview;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.graphics.Bitmap;
@@ -18,7 +20,8 @@ import android.widget.ImageView;
 public class FlipperActivity extends AppCompatActivity {
 
     private boolean mIsHead;
-    private ObjectAnimator mFlipper;
+    // private ObjectAnimator mFlipper;
+    private AnimatorSet mFlipper;
     private Bitmap mHeadImage;
     private Bitmap mTailsImage;
     private ImageView mFlipImage;
@@ -35,9 +38,12 @@ public class FlipperActivity extends AppCompatActivity {
         mFlipImage.setImageBitmap(mHeadImage);
         mIsHead = true;
 
-        mFlipper = ObjectAnimator.ofFloat(mFlipImage, "rotationY", 0f, 360f);
-        mFlipper.setDuration(500);
-        mFlipper.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+//        mFlipper = ObjectAnimator.ofFloat(mFlipImage, "rotationY", 0f, 360f);
+//        mFlipper.setDuration(500);
+        mFlipper = (AnimatorSet) AnimatorInflater.loadAnimator(this,R.animator.flip);
+        mFlipper.setTarget(mFlipImage);
+        ObjectAnimator animator = (ObjectAnimator) mFlipper.getChildAnimations().get(0);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 if (animation.getAnimatedFraction() > 0.25f && mIsHead) {
