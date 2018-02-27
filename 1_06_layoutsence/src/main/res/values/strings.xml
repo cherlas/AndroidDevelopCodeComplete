@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LayoutSense</string>
+    <string name="button_one">Button One</string>
+    <string name="this_is_default_layout">This is default layout</string>
+    <string name="button_three">Button Three</string>
+    <string name="button_two">Button Two</string>
+    <string name="this_is_horizontal_layout_for_landscap">This is horizontal layout for LANDSCAP</string>
+    <string name="detail">Detail</string>
+</resources>
