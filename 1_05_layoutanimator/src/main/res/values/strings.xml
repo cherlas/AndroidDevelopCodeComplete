@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LayoutAnimator</string>
+    <string name="click_to_add_item">Click To Add Item</string>
+    <string name="click_to_remove">Click To Remove</string>
+</resources>

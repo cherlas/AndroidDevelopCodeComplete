@@ -16,6 +16,6 @@
         android:repeatCount="1"
         android:repeatMode="reverse"
         android:valueType="floatType"
-        android:valueFrom="-200"
+        android:valueFrom="0"
         android:valueTo="800"/>
 </set>
