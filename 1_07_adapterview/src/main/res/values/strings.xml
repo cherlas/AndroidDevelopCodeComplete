@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AdapterView</string>
     <string name="no_items_to_display">No Items To Display</string>
+    <string name="tap_here_to_refresh">Tap Here To Refresh</string>
 </resources>
