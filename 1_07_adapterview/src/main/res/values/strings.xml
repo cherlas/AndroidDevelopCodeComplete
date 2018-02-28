@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AdapterView</string>
+    <string name="no_items_to_display">No Items To Display</string>
+</resources>
