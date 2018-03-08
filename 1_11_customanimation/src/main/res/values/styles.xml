@@ -2,6 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimator</item>
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -13,5 +14,24 @@
         <item name="android:activityOpenExitAnimation" >@anim/activity_open_exit</item>
         <item name="android:activityCloseEnterAnimation" >@anim/activity_close_enter</item>
         <item name="android:activityCloseExitAnimation" >@anim/activity_close_exit</item>
+    </style>
+
+    <style name="FragmentAnimator" parent="@android:style/Animation.Activity">
+        <item name="android:fragmentOpenEnterAnimation">@animator/fragment_enter</item>
+        <item name="android:fragmentOpenExitAnimation">@animator/fragment_exit</item>
+        <item name="android:fragmentCloseEnterAnimation">@animator/fragment_pop_enter</item>
+        <item name="android:fragmentCloseExitAnimation">@animator/fragment_pop_exit</item>
+    </style>
+
+    <style name="TransitionAnimation" parent="@android:style/Animation.Activity" >
+        <item name="android:activityOpenEnterAnimation" >@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation" >@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation" >@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation" >@anim/activity_close_exit</item>
+
+        <item name="android:fragmentOpenEnterAnimation">@animator/fragment_enter</item>
+        <item name="android:fragmentOpenExitAnimation">@animator/fragment_exit</item>
+        <item name="android:fragmentCloseEnterAnimation">@animator/fragment_pop_enter</item>
+        <item name="android:fragmentCloseExitAnimation">@animator/fragment_pop_exit</item>
     </style>
 </resources>
