@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CustomAnimation</string>
+    <string name="fragment_animation">Fragment Animation</string>
+    <string name="native_fragment">Native Fragment</string>
 </resources>

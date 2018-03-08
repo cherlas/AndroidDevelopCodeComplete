@@ -5,14 +5,14 @@
         android:toDegrees="0"
         android:pivotX="0%p"
         android:pivotY="0%p"
-        android:fillEnabled="true"
-        android:fillBefore="true"
-        android:fillAfter= "true"
         android:duration="500"/>
+        <!--android:fillEnabled="true"
+        android:fillBefore="true"
+        android:fillAfter= "true"-->
 
     <alpha android:fromAlpha="0.0" android:toAlpha="1.0"
-        android:fillEnable="true"
-        android:fillBefore="true"
-        android:fillAfter="true"
         android:duration="500"/>
+        <!--android:fillEnable="true"
+        android:fillBefore="true"
+        android:fillAfter="true"-->
 </set>
