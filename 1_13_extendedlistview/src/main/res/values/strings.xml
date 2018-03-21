@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ExtendedListView</string>
+    <string name="vertical_grid">Vertical Grid</string>
+    <string name="horizontal_grid">Horizontal Grid</string>
+    <string name="horizontal_list">Horizontal List</string>
+    <string name="vertical_list">Vertical List</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="add_item">Add Item</string>
 </resources>
