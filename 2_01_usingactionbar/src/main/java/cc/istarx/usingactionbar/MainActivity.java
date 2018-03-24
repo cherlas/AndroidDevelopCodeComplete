@@ -1,11 +1,13 @@
 package cc.istarx.usingactionbar;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -31,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 ActionBar.LayoutParams.MATCH_PARENT,
                 ActionBar.LayoutParams.MATCH_PARENT);
         actionBar.setCustomView(imageView,layoutParams);
+
+        findViewById(R.id.jump).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ToolBarActivity.class));
+            }
+        });
     }
 
     @Override
