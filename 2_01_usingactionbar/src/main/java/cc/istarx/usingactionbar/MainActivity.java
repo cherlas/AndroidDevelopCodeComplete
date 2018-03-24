@@ -3,8 +3,11 @@ package cc.istarx.usingactionbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,8 +19,18 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Custom Action Bar");
-        actionBar.setSubtitle("Sub Title");
+        actionBar.setDisplayShowTitleEnabled(false);
+        // actionBar.setTitle("Custom Action Bar");
+        // actionBar.setSubtitle("Sub Title");
+
+        // -------- custom action bar
+        ImageView imageView = new ImageView(this);
+        imageView.setImageResource(R.drawable.ic_launcher);
+        imageView.setScaleType(ImageView.ScaleType.CENTER);
+        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(
+                ActionBar.LayoutParams.MATCH_PARENT,
+                ActionBar.LayoutParams.MATCH_PARENT);
+        actionBar.setCustomView(imageView,layoutParams);
     }
 
     @Override
